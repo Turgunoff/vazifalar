@@ -50,8 +50,8 @@ Agar siz loyihaga hissa qo'shmoqchi bo'lsangiz, iltimos, quyidagi amallarni baja
 
 Agar sizda biron bir savol yoki taklif bo'lsa, iltimos, men bilan bog'laning:
 
-* Elektron pochta: [Sizning elektron pochta manzilingiz]
-* Telegram: [Sizning Telegram manzilingiz]
+* Elektron pochta: eldor.turgunov.94@yandex.com
+* Telegram: https://t.me/e_turgunoff
 
 ## Litsenziya
 
