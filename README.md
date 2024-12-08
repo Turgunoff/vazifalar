@@ -40,7 +40,6 @@ Vazifalar ilovasini yaratishda quyidagi texnologiyalardan foydalanildi:
 * Foydalanuvchi interfeysini yaxshilash
 
 ## Loyihaga hissa qo'shish
-
 Agar siz loyihaga hissa qo'shmoqchi bo'lsangiz, iltimos, quyidagi amallarni bajaring:
 
 1. Loyihani fork qiling.
