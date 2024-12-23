@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 
 enum TaskCategory {
-  education(Icons.school, Colors.blueGrey),
-  health(Icons.favorite, Colors.orange),
-  home(Icons.home, Colors.green),
-  others(Icons.calendar_month_rounded, Colors.purple),
-  personal(Icons.person, Colors.lightBlue),
-  shopping(Icons.shopping_bag, Colors.deepOrange),
-  social(Icons.people, Colors.brown),
-  travel(Icons.flight, Colors.pink),
-  work(Icons.work, Colors.amber);
+  education(IconsaxPlusBold.task, Colors.blueGrey),
+  health(IconsaxPlusBold.heart, Colors.orange),
+  home(IconsaxPlusBold.home, Colors.green),
+  others(IconsaxPlusBold.calendar, Colors.purple),
+  personal(IconsaxPlusBold.personalcard, Colors.lightBlue),
+  shopping(IconsaxPlusBold.shopping_bag, Colors.deepOrange),
+  social(IconsaxPlusBold.people, Colors.brown),
+  travel(IconsaxPlusBold.airplane, Colors.pink),
+  work(IconsaxPlusBold.card, Colors.amber);
 
   static TaskCategory stringToTaskCategory(String name) {
     try {

@@ -29,7 +29,7 @@ class HomeScreen extends ConsumerWidget {
       body: Stack(
         children: [
           AppBackground(
-            headerHeight: deviceSize.height * 0.3,
+            headerHeight: deviceSize.height * 0.2,
             header: SingleChildScrollView(
               physics: const AlwaysScrollableScrollPhysics(),
               child: Column(

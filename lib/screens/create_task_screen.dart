@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:vazifalar/config/config.dart';
 import 'package:vazifalar/data/data.dart';
 import 'package:vazifalar/providers/providers.dart';
@@ -39,6 +40,11 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(IconsaxPlusLinear.arrow_left_1)),
         backgroundColor: colors.primary,
         title: const DisplayWhiteText(
           text: 'Yangi vazifa yaratish',
@@ -108,11 +114,13 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
       );
 
       await ref.read(tasksProvider.notifier).createTask(task).then((value) {
-        AppAlerts.displaySnackbar(context, 'Vazifa muvaffaqiyatli yaratildi',backgroundColor: Colors.indigo);
+        AppAlerts.displaySnackbar(context, 'Vazifa muvaffaqiyatli yaratildi',
+            backgroundColor: Colors.indigo);
         context.go(RouteLocation.home);
       });
     } else {
-      AppAlerts.displaySnackbar(context, "Sarlavha bo'sh bo'lmasligi kerak",backgroundColor: Colors.red);
+      AppAlerts.displaySnackbar(context, "Sarlavha bo'sh bo'lmasligi kerak",
+          backgroundColor: Colors.red);
     }
   }
 }

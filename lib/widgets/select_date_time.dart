@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:vazifalar/providers/providers.dart';
 import 'package:vazifalar/utils/utils.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gap/gap.dart';
 import 'common_text_field.dart';
 
@@ -23,7 +23,8 @@ class SelectDateTime extends ConsumerWidget {
             readOnly: true,
             suffixIcon: IconButton(
               onPressed: () => Helpers.selectDate(context, ref),
-              icon: const FaIcon(FontAwesomeIcons.calendar),
+              icon: const Icon(IconsaxPlusBold.calendar),
+              // icon: const FaIcon(FontAwesomeIcons.calendar),
             ),
           ),
         ),
@@ -35,7 +36,7 @@ class SelectDateTime extends ConsumerWidget {
             readOnly: true,
             suffixIcon: IconButton(
               onPressed: () => _selectTime(context, ref),
-              icon: const FaIcon(FontAwesomeIcons.clock),
+              icon: const Icon(IconsaxPlusBold.clock),
             ),
           ),
         ),
