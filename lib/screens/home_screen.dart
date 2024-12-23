@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:lottie/lottie.dart';
 import 'package:vazifalar/data/data.dart';
 import 'package:vazifalar/config/config.dart';
 import 'package:vazifalar/providers/providers.dart';
